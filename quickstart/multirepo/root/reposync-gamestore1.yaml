@@ -13,7 +13,7 @@ spec:
     repo: https://github.com/projects-demo/anthos-config-management-samples
     # If you move the configs to a different branch, update the branch here
     branch: init
-    dir: quickstart/multirepo/namespaces/gamestore
+    dir: quickstart/multirepo/namespaces/gamestore1
     # We recommend securing your source repository.
     # Other supported auth: `ssh`, `cookiefile`, `token`, `gcenode`.
     auth: none
