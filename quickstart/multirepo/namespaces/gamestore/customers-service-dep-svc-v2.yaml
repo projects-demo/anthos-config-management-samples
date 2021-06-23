@@ -11,6 +11,8 @@ kind: Service
 
 metadata:
   name: customers-service-v2
+  namespace: gamestore
+
   labels:
     app: customers-service-svc-v2-label
 
@@ -29,6 +31,8 @@ spec:
 apiVersion: apps/v1
 
 kind: Deployment
+namespace: gamestore
+
 
 metadata:
   name: customers-service-deployment-v2
