@@ -1,0 +1,10 @@
+#UNSET, DISABLE, PERMISSIVE, STRICT https://istio.io/latest/docs/tasks/security/authentication/authn-policy/
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: mtlsRule2
+  namespace: default
+spec:
+  mtls:
+    mode: PERMISSIVE
+
