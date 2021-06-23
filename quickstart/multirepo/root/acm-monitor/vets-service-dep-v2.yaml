@@ -1,0 +1,36 @@
+
+##################################################################################################
+
+# Hello message services being called by main service vets-service v2
+
+##################################################################################################
+
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: vets-service-deployment-v2
+  labels:
+    app: vets-service-dep-v2-label
+
+spec:
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: vets-service-v1-v2
+
+  template: # template for the pods
+    metadata:
+      labels:
+        app: vets-service-v1-v2
+        version: v2
+
+    spec:
+      containers:
+      - name: vets-service-ver2
+        image: saurabh2204/spring-petclinic-vets-service-istio-v2:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8999
+
