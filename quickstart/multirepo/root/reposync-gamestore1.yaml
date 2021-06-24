@@ -1,5 +1,5 @@
 apiVersion: configsync.gke.io/v1beta1
-kind: RepoSync
+kind: Repo
 metadata:
   # There can be at most one RepoSync object per namespace.
   # To enforce this restriction, the object name must be repo-sync. 
