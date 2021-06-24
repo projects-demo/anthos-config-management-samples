@@ -1,8 +1,9 @@
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: admin-role
+  name: webstore-admin
 rules:
 - apiGroups: ["*"]
   resources: ["namespaces"]
-  verbs: ["*"]
+  verbs:
+  - "*"
