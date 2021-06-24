@@ -1,14 +1,13 @@
-# ROOT_REPO/namespaces/NAMESPACE/sync-rolebinding.yaml
- kind: RoleBinding
- apiVersion: rbac.authorization.k8s.io/v1
- metadata:
-   name: syncs-repo
-   namespace: gamestore1
- subjects:
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: gamestore1
+  name: container-reader-default-ns
+subjects:
  - kind: ServiceAccount
    name: ns-reconciler-gamestore1
    namespace: config-management-system
- roleRef:
-   kind: Role
-   name: admin-role1
-   apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: admin-role1
+  apiGroup: rbac.authorization.k8s.io
