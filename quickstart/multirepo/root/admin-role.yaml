@@ -2,6 +2,7 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: admin-role1
+  namespace: gamestore1
 rules:
 - apiGroups: [""] # "" indicates the core API group
   resources: ["*"]
