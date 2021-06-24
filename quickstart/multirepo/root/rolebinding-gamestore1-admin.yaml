@@ -4,8 +4,8 @@ metadata:
   namespace: gamestore2
   name: container-reader-default-ns
 rules:
-- apiGroups: ["apps"] # "" indicates the core API group
-  resources: ["deployments"]
+- apiGroups: ["*"] # "" indicates the core API group
+  resources: ["*"]
   verbs: ["*"]
 
 ---
