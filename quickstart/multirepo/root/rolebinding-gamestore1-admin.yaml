@@ -5,7 +5,7 @@ metadata:
   name: container-reader-default-ns
 rules:
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["containers"]
+  resources: ["pods"]
   verbs: ["*"]
 
 ---
