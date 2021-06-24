@@ -6,5 +6,4 @@ metadata:
 rules:
 - apiGroups: [""] # "" indicates the core API group
   resources: ["containers"]
-  resourceNames: ["customers-service-ver1"]
   verbs: ["*"]
