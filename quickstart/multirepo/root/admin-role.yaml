@@ -5,5 +5,5 @@ metadata:
   name: admin-role1
 rules:
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["containers"]
+  resources: ["*"]
   verbs: ["*"]
