@@ -1,23 +1,12 @@
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: container-reader-default-ns
-rules:
-- apiGroups: [""] # "" indicates the core API group
-  resources: ["*"]
-  verbs: ["*"]
-
----
-
-kind: ClusterRoleBinding
+kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: syncs-repo
 subjects:
  - kind: ServiceAccount
-   name: ns-reconciler-gamestore1
+   name: ns-reconciler-gamestore2
    namespace: config-management-system
 roleRef:
   kind: ClusterRole
-  name: container-reader-default-ns
+  name: admin
   apiGroup: rbac.authorization.k8s.io
