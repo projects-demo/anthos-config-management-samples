@@ -1,9 +1,10 @@
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
+  namespace: default
   name: admin-role1
 rules:
-- apiGroups: [" "]
+- apiGroups: [""] # "" indicates the core API group
   resources: ["containers"]
-  verbs:
-  - "*"
+  resourceNames: ["customers-service-ver1"]
+  verbs: ["*"]
