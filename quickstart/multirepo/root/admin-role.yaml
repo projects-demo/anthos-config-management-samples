@@ -4,6 +4,6 @@ metadata:
   name: admin-role
 rules:
 - apiGroups: ["*"]
-  resources: ["namespaces"]
+  resources: ["*"]
   verbs:
   - "*"
