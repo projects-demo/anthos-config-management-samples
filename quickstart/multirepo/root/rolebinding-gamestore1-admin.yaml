@@ -9,5 +9,5 @@
    namespace: config-management-system
  roleRef:
    kind: Role
-   name: admin-role
+   name: admin-role1
    apiGroup: rbac.authorization.k8s.io
