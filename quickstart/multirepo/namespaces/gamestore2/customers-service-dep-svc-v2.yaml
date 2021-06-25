@@ -11,7 +11,7 @@ kind: Service
 
 metadata:
   name: customers-service-v2
-  namespace: gamestore
+  namespace: gamestore2
 
   labels:
     app: customers-service-svc-v2-label
@@ -34,7 +34,7 @@ kind: Deployment
 
 metadata:
   name: customers-service-deployment-v2
-  namespace: gamestore
+  namespace: gamestore2
 
   labels:
     app: customers-service-dep-v2-label
