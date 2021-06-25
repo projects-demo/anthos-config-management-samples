@@ -11,7 +11,7 @@ kind: Service
 
 metadata:
   name: customers-service-v2
-  namespace: gamestore2
+  namespace: gke-dev1
 
   labels:
     app: customers-service-svc-v2-label
