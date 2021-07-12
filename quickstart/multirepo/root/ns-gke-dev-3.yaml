@@ -3,5 +3,5 @@ kind: Namespace
 metadata:
   name: gke-dev3
   labels:
-    environment: geo
+    geo: geo1
   
