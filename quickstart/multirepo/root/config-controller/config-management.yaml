@@ -1,0 +1,16 @@
+# config-management.yaml
+
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  enableMultiRepo: false
+  clusterName: krmapihost-config-controller-1
+  git:
+    policyDir: DIRECTORY
+    gcpServiceAccountEmail: config-sync-sa@successful-demo.iam.gserviceaccount.com
+    secretType: gcpserviceaccount
+    syncBranch: init
+    syncRepo: https://github.com/projects-demo/anthos-config-management-samples/
+  sourceFormat: unstructured
