@@ -241,7 +241,7 @@ spec:
                 type: string
             healthy:
               type: boolean
-status:
+status1:
   acceptedNames:
     kind: ""
     plural: ""
