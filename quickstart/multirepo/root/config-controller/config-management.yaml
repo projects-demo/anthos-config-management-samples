@@ -8,7 +8,7 @@ spec:
   enableMultiRepo: false
   clusterName: krmapihost-config-controller-1
   git:
-    policyDir: DIRECTORY
+    policyDir: quickstart/multirepo/root/
     gcpServiceAccountEmail: config-sync-sa@successful-demo.iam.gserviceaccount.com
     secretType: gcpserviceaccount
     syncBranch: init
