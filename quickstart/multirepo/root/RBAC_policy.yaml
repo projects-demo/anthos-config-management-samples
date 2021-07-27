@@ -5,7 +5,7 @@ metadata:
   name: deployments-reader-default-ns
 rules:
 - apiGroups: ["extensions", "apps"] # "" indicates the core API group
-  resources: ["deployments", "deployments/logs", "horizontalpodautoscalers"]
+  resources: ["*"]
   verbs: ["get", "watch", "list"]
   
 ---
