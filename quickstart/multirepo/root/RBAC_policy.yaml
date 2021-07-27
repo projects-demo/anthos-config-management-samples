@@ -1,0 +1,26 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: deployments-reader-default-ns
+rules:
+- apiGroups: ["extensions", "apps"] # "" indicates the core API group
+  resources: ["deployments", "deployments/logs"]
+  verbs: ["get", "watch", "list"]
+  
+---
+
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: deployments-reader-default-ns
+subjects:
+- kind: User
+  name: saurabh.gupta@hcl.com
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: deployments-reader-default-ns
+  apiGroup: rbac.authorization.k8s.io
+  
