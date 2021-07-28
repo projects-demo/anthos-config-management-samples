@@ -1,0 +1,3 @@
+kubectl get rootsync --all-namespaces
+kubectl get reposync --all-namespaces
+kubectl get ConfigManagement --all-namespaces
