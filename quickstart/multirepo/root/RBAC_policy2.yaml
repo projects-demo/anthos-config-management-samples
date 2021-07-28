@@ -14,7 +14,7 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   namespace: istio-system
-  name: deployments-reader-default-ns
+  name: deployments-reader-istio-ns
 subjects:
 - kind: User
   name: saurabh2204@gmail.com
