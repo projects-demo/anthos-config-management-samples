@@ -1,3 +1,7 @@
 kubectl get rootsync --all-namespaces
 kubectl get reposync --all-namespaces
 kubectl get ConfigManagement --all-namespaces
+
+Config Controller -
+kubectl get ConfigConnectorContext --all-namespaces
+service-996545993272@gcp-sa-yakima.iam.gserviceaccount.com
