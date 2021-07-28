@@ -25,5 +25,5 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
   
   # Provide IAM access to saurabh.gupta@hcl.com with role - Kubernetes Engine Cluster Viewer
-  # Login to cluster with this user and see he is able to see deployments - kubectl get deployments
+  # Login to cluster with this user and see he is able to see deployments - kubectl get deployments -n default AND NOT kubectl get deployments istio-system 
   
