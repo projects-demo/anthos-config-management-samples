@@ -1,7 +1,0 @@
-# repo.yaml
-
-apiVersion: sourcerepo.cnrm.cloud.google.com/v1beta1
-kind: SourceRepoRepository
-metadata:
-  name: acm-config-control-gity
-  namespace: config-control
