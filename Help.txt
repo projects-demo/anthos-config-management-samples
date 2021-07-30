@@ -1,8 +1,9 @@
-kubectl get rootsync --all-namespaces
-kubectl get reposync --all-namespaces
-kubectl get ConfigManagement --all-namespaces
+#https://cloud.google.com/anthos-config-management/docs/how-to/installing
+kubectl get rootsync --all-namespaces # Used for syncing root dir. part of ACM component 1, 2. Installed once register cluster with ACM in Anthos
+kubectl get reposync --all-namespaces #Used for syncing namespaced repository,or any other repository. part of ACM component 1,2.Installed once register cluster with ACM in Anthos
+kubectl get ConfigManagement --all-namespaces # part of ACM component 1, 2. Installed once register cluster with ACM in Anthos
 
-GitOps way to create cloud resources using Config Controller (part of Anthos)-
+GitOps way to create cloud resources using Config Controller (part of Anthos config Management component 3)-
 kubectl get ConfigConnectorContext --all-namespaces
 service-996545993272@gcp-sa-yakima.iam.gserviceaccount.com
 gcloud alpha anthos config controller create CONFIG_CONTROLLER_NAME --location=us-central1
