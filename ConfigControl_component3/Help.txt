@@ -1,0 +1,19 @@
+https://cloud.google.com/anthos-config-management/docs/how-to/config-controller-setup
+
+1 : Setup GCP source repository -
+  1.1 : Create Cloud Source Repository (works only with GCP cloud source repository)
+  https://source.developers.google.com/p/gebu-demo-projects/r/acm-config-control-repo1
+  1.2 : Put GCP resource provisioning yamls in policy directory.
+  provision_repo.yaml
+
+2: Setup Config Controller/ connector gke instance
+  2.1 : Install Config Controller Instance
+  gcloud alpha anthos config controller create CONFIG_CONTROLLER_NAME --location=us-central1
+  2.2 : create service account, which will create GCP resources -
+  kubectl apply -f gitops-iam.yaml
+  2.3 : create config-management file and configure cloud source repository 
+  kubectl apply -f config-management.yaml
+
+3 : Testing
+  nomos status --contexts $(kubectl config current-context)
+  kubectl logs -n config-management-system -l app=git-importer -c git-sync
