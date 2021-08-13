@@ -3,8 +3,5 @@ kind: K8sRestrictNamespaces
 metadata:
   name: restrict-ns
 spec:
-  match:
-    kinds:
-      - kinds: ["*"]
   parameters:
     restrictedNamespaces: ["geo6"]
