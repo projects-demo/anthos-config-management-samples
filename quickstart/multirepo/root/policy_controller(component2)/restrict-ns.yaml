@@ -1,5 +1,3 @@
-# ns-must-have-geo.yaml
-
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: k8srestrictnamespaces
 metadata:
@@ -10,5 +8,4 @@ spec:
       - apiGroups: [""]
         kinds: ["Namespace"]
   parameters:
-    labels:
-      - key: "geo"
+    Restricted Namespaces: "geo"
