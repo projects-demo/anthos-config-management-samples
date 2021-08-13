@@ -9,4 +9,4 @@ spec:
     kinds:
       - apiGroups: [""]
   parameters:
-    restrictedLabels: ["test"]
+    restrictedLabels: ["test","name"]
