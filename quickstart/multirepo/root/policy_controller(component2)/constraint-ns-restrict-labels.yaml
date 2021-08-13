@@ -8,6 +8,5 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Cluster"]
   parameters:
     restrictedLabels: ["test"]
