@@ -6,5 +6,5 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Namespace"]
-    restrictedNamespaces: ["geo"]
+        kinds: ["*"]
+    restrictedNamespaces: ["geo5"]
