@@ -8,6 +8,6 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
-        kinds: ["Namespace"]
+        kinds: ["Cluster"]
   parameters:
     restrictedLabels: ["test"]
