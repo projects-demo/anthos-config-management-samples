@@ -10,4 +10,4 @@ spec:
       - apiGroups: [""]
         kinds: ["Namespace"]
   parameters:
-    restrictedLabels: ["restrictedlabel"]
+    restrictedLabels: ["test"]
