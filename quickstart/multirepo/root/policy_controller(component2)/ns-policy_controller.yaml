@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ns-policy-controller1
+  name: ns-policy-controller2
   labels:
     name: test
 
