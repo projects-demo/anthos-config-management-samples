@@ -8,4 +8,4 @@ spec:
     kinds:
       - apiGroups: [""]
   parameters:
-    restrictedNamespaces: ["geo"]
+    restrictedNamespaces: "geo1"
