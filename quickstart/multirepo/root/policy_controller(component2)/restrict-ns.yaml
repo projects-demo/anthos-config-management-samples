@@ -5,7 +5,6 @@ metadata:
 spec:
   match:
     kinds:
-      - apiGroups: ["*"]
-        kinds: ["*"]
+      - kinds: ["*"]
   parameters:
     restrictedNamespaces: ["geo6"]
