@@ -7,4 +7,5 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["*"]
-    restrictedNamespaces: ["geo5"]
+  parameters:
+    restrictedNamespaces: ["geo6"]
