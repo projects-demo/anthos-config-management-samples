@@ -1,5 +1,6 @@
+
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: k8srestrictnamespaces
+kind: K8sRestrictNamespaces
 metadata:
   name: restrict-ns
 spec:
