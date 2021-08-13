@@ -1,7 +1,10 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRestrictNamespaces
 metadata:
-  name: restrict-ns1
+  name: restrict-ns
 spec:
-  parameters:
-    restrictedNamespaces: ["geo1", "hello4"]
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Namespace"]
+    restrictedNamespaces: ["geo"]
