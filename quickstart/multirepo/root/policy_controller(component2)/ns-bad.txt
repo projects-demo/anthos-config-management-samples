@@ -1,3 +1,4 @@
+#ns-bad.txt change to ns-bad.yaml to see
 apiVersion: v1
 kind: Namespace
 metadata:
