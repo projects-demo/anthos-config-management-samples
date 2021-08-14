@@ -8,5 +8,6 @@ spec:
   match:
     kinds:
       - apiGroups: [""]
+        kinds: ["*"]
   parameters:
     restrictedLabels: ["test","name"]
