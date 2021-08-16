@@ -1,0 +1,13 @@
+# constraint-container-limits.yaml
+
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: GCPStorageLocationConstraintV1
+metadata:
+  name: constraint-gcp-storage-location
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["*"]
+  parameters:
+    locations: ["US-EAST1"]
