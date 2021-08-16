@@ -1,0 +1,15 @@
+  
+# ns-must-have-geo.yaml
+
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sContainerLimits
+metadata:
+  name: constraint-container-limits
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["*"]
+  parameters:
+    cpu: 60
+    memory: 64
