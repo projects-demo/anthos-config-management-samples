@@ -1,0 +1,36 @@
+
+##################################################################################################
+
+# Hello message services being called by main service customers-service v3
+
+##################################################################################################
+
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: customers-service-deployment-v3
+  labels:
+    app: customers-service-dep3-label
+
+spec:
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: customers-service-v1-v3
+
+  template: # template for the pods
+    metadata:
+      labels:
+        app: customers-service-v1-v3
+        version: v3
+
+    spec:
+      containers:
+      - name: customers-service-ver3
+        image: saurabh2204/spring-petclinic-customers-service-istio-v3-with-externaldb:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9890
+
