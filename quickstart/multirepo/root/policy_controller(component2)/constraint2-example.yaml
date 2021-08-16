@@ -4,4 +4,4 @@ kind: Namespace
 metadata:
   name: ns-policy-controller5
   labels:
-    name: Saurabh
+    name1: Saurabh # if label is restricted as defined in K8sRestrictLabels ex - "test" or "name", then it will fail.
