@@ -1,0 +1,56 @@
+https://cloud.google.com/anthos-config-management/docs/reference/constraint-template-library
+
+kubectl get constrainttemplates
+kubectl get constrainttemplates -l="configmanagement.gke.io/configmanagement=config-management"
+kubectl describe constrainttemplate gcpstoragelocationconstraintv1
+
+	
+NAME                                      AGE
+allowedserviceportname                    27m
+destinationruletlsenabled                 27m
+disallowedauthzprefix                     27m
+gcpstoragelocationconstraintv1            27m
+k8sallowedrepos                           27m
+k8sblocknodeport                          27m
+k8sblockprocessnamespacesharing           27m
+k8scontainerlimits                        27m
+k8scontainerratios                        27m
+k8sdisallowedrolebindingsubjects          27m
+k8sdisallowedtags                         27m
+k8semptydirhassizelimit                   27m
+k8sexternalips                            27m
+k8shttpsonly                              27m
+k8simagedigests                           27m
+k8slocalstoragerequiresafetoevict         27m
+k8smemoryrequestequalslimit               27m
+k8snoenvvarsecrets                        27m
+k8snoexternalservices                     27m
+k8spodsrequiresecuritycontext             27m
+k8sprohibitrolewildcardaccess             27m
+k8spspallowedusers                        27m
+k8spspallowprivilegeescalationcontainer   27m
+k8spspapparmor                            27m
+k8spspcapabilities                        27m
+k8spspflexvolumes                         27m
+k8spspforbiddensysctls                    27m
+k8spspfsgroup                             27m
+k8spsphostfilesystem                      27m
+k8spsphostnamespace                       27m
+k8spsphostnetworkingports                 27m
+k8spspprivilegedcontainer                 27m
+k8spspprocmount                           27m
+k8spspreadonlyrootfilesystem              27m
+k8spspseccomp                             27m
+k8spspselinux                             27m
+k8spspselinuxv2                           27m
+k8spspvolumetypes                         27m
+k8srequiredlabels                         27m
+k8srequiredprobes                         27m
+k8srequirenamespacenetworkpolicies        27m
+k8srestrictlabels                         27m
+k8srestrictnamespaces                     27m
+k8srestrictrolebindings                   27m
+k8suniqueingresshost                      27m
+k8suniqueserviceselector                  27m
+policystrictonly                          27m
+sourcenotallauthz                         27m
