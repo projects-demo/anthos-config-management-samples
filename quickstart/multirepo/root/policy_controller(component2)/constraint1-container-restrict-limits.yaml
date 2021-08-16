@@ -1,5 +1,5 @@
   
-# ns-must-have-geo.yaml
+# constraint-container-limits.yaml
 
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sContainerLimits
