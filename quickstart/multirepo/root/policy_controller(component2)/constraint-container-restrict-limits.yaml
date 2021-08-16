@@ -11,5 +11,5 @@ spec:
       - apiGroups: [""]
         kinds: ["*"]
   parameters:
-    cpu: 60
-    memory: 64
+    cpu: "50m"
+    memory: "64Mi"
