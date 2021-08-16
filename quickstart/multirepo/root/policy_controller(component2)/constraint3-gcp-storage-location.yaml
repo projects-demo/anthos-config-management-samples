@@ -10,4 +10,4 @@ spec:
       - apiGroups: [""]
         kinds: ["*"]
   parameters:
-    locations: ["US-EAST1"]
+    locations: ["us-east1"]
