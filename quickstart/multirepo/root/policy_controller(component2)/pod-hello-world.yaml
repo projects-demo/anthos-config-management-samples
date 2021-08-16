@@ -15,7 +15,7 @@ spec:
         cpu: "20m"
       limits:
         memory: "64Mi"
-        cpu: "50m"
+        cpu: "50m" #if put greater cpu value than limit defined in restriction ex- "60m", this will fail.
 
 #create a svc to access, by exposing this pod
 #kubectl expose pod  hello-world-pod --type=LoadBalancer --port=8080 --name=hello-world-svc2 --selector=name1=hello-world
