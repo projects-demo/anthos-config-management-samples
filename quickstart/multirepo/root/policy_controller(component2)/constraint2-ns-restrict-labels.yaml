@@ -1,4 +1,4 @@
-# ns-must-have-geo.yaml
+# K8sRestrictLabels restriction policy
 
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sRestrictLabels
