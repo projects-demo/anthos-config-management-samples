@@ -1,4 +1,5 @@
 https://cloud.google.com/anthos-config-management/docs/reference/constraint-template-library
+https://cloud.google.com/anthos-config-management/docs/how-to/using-constraints-to-enforce-pod-security
 
 kubectl get constrainttemplates
 kubectl get constrainttemplates -l="configmanagement.gke.io/configmanagement=config-management"
