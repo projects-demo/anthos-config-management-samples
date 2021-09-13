@@ -5,6 +5,7 @@ kubectl get ConfigManagement --all-namespaces # part of ACM component 1, 2. Inst
 
 GitOps way to create cloud resources using Config Controller (part of Anthos config Management component 3)-
 kubectl get ConfigConnectorContext --all-namespaces
+kubectl get ConfigConnector -A
 service-996545993272@gcp-sa-yakima.iam.gserviceaccount.com (i.e. service-$PROJECT_NUMBER@gcp-sa-yakima.iam.gserviceaccount.com)
 gcloud alpha anthos config controller create CONFIG_CONTROLLER_NAME --location=us-central1
 command will create config controller gke instance (krmapihost)
