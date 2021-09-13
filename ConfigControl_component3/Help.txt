@@ -1,8 +1,12 @@
-https://cloud.google.com/anthos-config-management/docs/how-to/config-controller-setup
 Config Controller is a hosted service to provision and orchestrate Anthos and Google Cloud resources. 
 Config Controller leverages Config Connector, which maps resources using the Kubernetes Resource Model (KRM) to 
 their Google Cloud counterparts by making the necessary Google Cloud API calls. It also includes Config Sync 
 
+There are 2 ways to manage GCP resources from GKE -
+1 : Config Controller (Part of ACM :: Has Config Connector, Config Sync components) https://cloud.google.com/anthos-config-management/docs/how-to/config-controller-setup
+2 : Config Connector (Part of GKE :: Has Config Connector) https://cloud.google.com/config-connector/docs/how-to/install-upgrade-uninstall#cloud-console
+
+Way 1->
 1 : Setup GCP source repository -
   1.1 : Create Cloud Source Repository (works only with GCP cloud source repository)
   https://source.developers.google.com/p/gebu-demo-projects/r/acm-config-control-repo1
