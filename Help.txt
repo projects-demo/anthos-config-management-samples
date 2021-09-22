@@ -3,6 +3,7 @@ kubectl get rootsync --all-namespaces # Used for syncing root dir. part of ACM c
 kubectl get reposync --all-namespaces #Used for syncing namespaced repository,or any other repository. part of ACM component 1,2.Installed once register cluster with ACM in Anthos
 kubectl get ConfigManagement --all-namespaces # part of ACM component 1, 2. Installed once register cluster with ACM in Anthos
 kubectl get pods -n config-management-system
+kubectl get ns -l app.kubernetes.io/managed-by=configmanagement.gke.io
 
 GitOps way to create cloud resources using Config Controller (part of Anthos config Management component 3)-
 kubectl get ConfigConnectorContext --all-namespaces
