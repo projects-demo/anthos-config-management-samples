@@ -7,6 +7,9 @@ There are 2 ways to manage GCP resources from GKE -
 2 : Config Connector (Part of GKE :: Has Config Connector) https://cloud.google.com/config-connector/docs/how-to/install-upgrade-uninstall#cloud-console
 Both are dependent on Workload Identity Pool to be enabled - https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity#config-connector
 
+Other non-gke ways are -
+Commandline tools & Deployment manager
+
 Way 1->
 1 : Setup GCP source repository -
   1.1 : Create Cloud Source Repository (works only with GCP cloud source repository)
