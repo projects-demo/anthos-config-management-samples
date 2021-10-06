@@ -28,3 +28,14 @@ Way 1->
 3 : Testing
   nomos status --contexts $(kubectl config current-context)
   kubectl logs -n config-management-system -l app=git-importer -c git-sync
+
+https://cloud.google.com/config-connector/docs/reference/overview
+Few examples -
+Google Cloud Resource	    Config Connector Resource Name
+-------------------------------------------------------
+BigQuery	                  BigQueryTable
+Cloud Bigtable	            BigtableTable
+Binary Authorization	      BinaryAuthorizationPolicy
+Compute Engine	            ComputeInstance
+Cloud SQL	                  SQLDatabase
+Cloud Source Repositories	  SourceRepoRepository
