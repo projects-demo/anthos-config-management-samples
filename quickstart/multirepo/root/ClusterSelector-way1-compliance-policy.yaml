@@ -1,0 +1,31 @@
+#https://cloud.google.com/anthos-config-management/docs/how-to/clusterselectors
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: my-namespace
+  name: namespace-reader
+  annotations:
+    configsync.gke.io/cluster-name-selector: cluster-1,cluster-2,cluster-3
+rules:
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["get", "watch", "list"]
+  
+---
+#The following RoleBinding config selects only clusters that match the selector-location-france ClusterSelector. This configuration might be useful, for instance, if a compliance guideline only allowed a particular service account to view information on clusters in their designated geographic region.
+
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: viewers
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-location-france
+subjects:
+- kind: Group
+  name: system:serviceaccounts:foo
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: my-namespace
+  apiGroup: rbac.authorization.k8s.io
+    
