@@ -9,6 +9,11 @@ v/s
 https://cloud.google.com/kubernetes-engine/docs/how-to/pod-security-policies
 kubectl get psp --all-namespaces
 
+Auditing using constraints (enforcementAction: deny(default) or enforcementAction: dryrun to a constraint) - 
+https://cloud.google.com/anthos-config-management/docs/how-to/auditing-constraints
+kubectl get K8sPSPAllowedUsers user-must-be-3333 -o yaml
+kubectl logs -n gatekeeper-system -l gatekeeper.sh/system=yes
+
 kubectl get constrainttemplates
 kubectl get constrainttemplates -l="configmanagement.gke.io/configmanagement=config-management"
 kubectl describe constrainttemplate gcpstoragelocationconstraintv1
