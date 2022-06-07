@@ -1,4 +1,5 @@
 #audit.yaml
+#https://cloud.google.com/anthos-config-management/docs/how-to/auditing-constraints
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPSPAllowedUsers
 metadata:
