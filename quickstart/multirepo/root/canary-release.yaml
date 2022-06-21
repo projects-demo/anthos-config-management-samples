@@ -11,11 +11,11 @@ spec:
     - destination:
         host: vets-service
         subset: v1
-      weight: 1
+      weight: 95
     - destination:
         host: vets-service
         subset: v2
-      weight: 99
+      weight: 5
 
 ---
 apiVersion: networking.istio.io/v1beta1
