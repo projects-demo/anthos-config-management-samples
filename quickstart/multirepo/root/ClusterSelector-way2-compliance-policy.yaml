@@ -18,7 +18,7 @@ spec:
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: namespace-reader
+  name: namespace-reader2
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
@@ -37,6 +37,6 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: namespace-reader
+  name: namespace-reader2
   apiGroup: rbac.authorization.k8s.io
   
