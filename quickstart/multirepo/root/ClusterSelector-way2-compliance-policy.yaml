@@ -5,6 +5,7 @@ metadata:
   name: gke-cluster
   labels:
     location: france
+    environment: prod
 ---
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
