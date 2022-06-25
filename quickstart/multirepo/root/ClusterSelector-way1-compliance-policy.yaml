@@ -17,6 +17,8 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: viewers-asia
+  annotations:
+    configsync.gke.io/cluster-name-selector: cluster-asia,cluster-3
 #  annotations:
 #    configmanagement.gke.io/cluster-selector: selector-location-france
 subjects:
