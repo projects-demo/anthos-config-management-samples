@@ -3,6 +3,11 @@
 #To see violations of a given constraint-
 #kubectl get K8sPSPAllowedUsers user-must-be-3333 -o yaml
 
+#To get all Policy Controller logs, run the following command:
+#kubectl logs -n gatekeeper-system -l gatekeeper.sh/system=yes
+#You can view audit reports in your logs -
+#The audit results have "process":"audit" in the log lines
+
 #There are two enforcement actions: deny and dryrun.
 #deny is the default enforcement action. It's automatically enabled, even if you don't add an enforcement action in your constraint.
 
