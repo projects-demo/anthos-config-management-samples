@@ -1,5 +1,11 @@
 #audit.yaml
 #https://cloud.google.com/anthos-config-management/docs/how-to/auditing-constraints
+#To see violations of a given constraint-
+#kubectl get K8sPSPAllowedUsers user-must-be-3333 -o yaml
+
+#There are two enforcement actions: deny and dryrun.
+#deny is the default enforcement action. It's automatically enabled, even if you don't add an enforcement action in your constraint.
+
 apiVersion: constraints.gatekeeper.sh/v1beta1
 kind: K8sPSPAllowedUsers
 metadata:
