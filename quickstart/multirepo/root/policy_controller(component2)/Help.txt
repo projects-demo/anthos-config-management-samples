@@ -1,6 +1,9 @@
 -------Terraform Validator-------- 
 https://github.com/GoogleCloudPlatform/policy-library/blob/main/docs/index.md
 https://github.com/GoogleCloudPlatform/policy-library/tree/master/policies/templates
+gcloud beta terraform vet -
+https://cloud.google.com/docs/terraform/policy-validation
+https://cloud.google.com/sdk/gcloud/reference/beta/terraform/vet
 -------Terraform Validator--------for policies which can be applied to GCP resources. Below policies are for k8s resources 
 
 https://cloud.google.com/anthos-config-management/docs/reference/constraint-template-library
