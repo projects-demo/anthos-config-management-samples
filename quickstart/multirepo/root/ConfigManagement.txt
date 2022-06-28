@@ -1,0 +1,39 @@
+#kubectl get configmanagement -o yaml
+#Automatically gets created when install ACM on cluster
+
+apiVersion: v1
+items:
+- apiVersion: configmanagement.gke.io/v1
+  kind: ConfigManagement
+  metadata:
+    annotations:
+      configmanagement.gke.io/managed-by-hub: "true"
+      configmanagement.gke.io/update-time: "1656415601"
+    creationTimestamp: "2022-06-20T17:37:48Z"
+    finalizers:
+    - configsync.configmanagement.gke.io
+    - policycontroller.configmanagement.gke.io
+    - policycontroller.configmanagement.gke.io/library-referential
+    - policycontroller.configmanagement.gke.io/library
+    generation: 3
+    name: config-management
+    resourceVersion: ""
+    uid: 
+  spec:
+    clusterName: CLUSTER_NAME
+    enableMultiRepo: true
+    git:
+      proxy: {}
+    hierarchyController: {}
+    policyController:
+      auditIntervalSeconds: 60
+      enabled: true
+      mutation: {}
+      referentialRulesEnabled: true
+      templateLibraryInstalled: true
+  status:
+    configManagementVersion: v1.11.2-rc.1
+    healthy: true
+kind: List
+metadata:
+  resourceVersion: ""
