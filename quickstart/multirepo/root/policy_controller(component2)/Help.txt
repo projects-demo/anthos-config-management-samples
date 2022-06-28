@@ -1,5 +1,5 @@
 -------Terraform Validator-------- 
-https://github.com/GoogleCloudPlatform/terraform-validator/blob/main/docs/policy_library.md
+https://github.com/GoogleCloudPlatform/policy-library/blob/main/docs/index.md
 https://github.com/GoogleCloudPlatform/policy-library/tree/master/policies/templates
 -------Terraform Validator--------for policies which can be applied to GCP resources. Below policies are for k8s resources 
 
