@@ -15,7 +15,7 @@
 apiVersion: templates.gatekeeper.sh/v1alpha1
 kind: ConstraintTemplate
 metadata:
-  name: gcp_bigquery_table_retention_v1
+  name: gcp-bigquery-table-retention-v1
 spec:
   crd:
     spec:
