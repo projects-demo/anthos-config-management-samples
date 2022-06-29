@@ -4,6 +4,7 @@ https://github.com/GoogleCloudPlatform/policy-library/tree/master/policies/templ
 gcloud beta terraform vet -
 https://cloud.google.com/docs/terraform/policy-validation
 https://cloud.google.com/sdk/gcloud/reference/beta/terraform/vet
+https://cloud.google.com/architecture/managing-infrastructure-as-code
 # Old
 terraform-validator validate ./tfplan.json --policy-path=/path/to/policy-library
 # New
