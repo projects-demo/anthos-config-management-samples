@@ -7,4 +7,4 @@ spec:
   host: visits-service.default.svc.cluster.local
   trafficPolicy:
     tls:
-      mode: DISABLE
+      mode: ISTIO_MUTUAL
