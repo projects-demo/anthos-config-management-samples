@@ -1,0 +1,11 @@
+#UNSET, DISABLE, PERMISSIVE, STRICT https://istio.io/latest/docs/tasks/security/authentication/authn-policy/
+#PeerAuthentication defines how traffic will be tunneled (or not) to the sidecar.
+
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: mtlsrule2
+  namespace: default
+spec:
+  mtls:
+    mode: DISABLE
