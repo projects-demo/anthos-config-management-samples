@@ -11,7 +11,9 @@ rules:
   verbs: ["get", "watch", "list"]
   
 ---
-#The following RoleBinding config selects only clusters that match the selector-location-france ClusterSelector. This configuration might be useful, for instance, if a compliance guideline only allowed a particular service account to view information on clusters in their designated geographic region.
+#The following RoleBinding config selects only clusters that match the selector-location-france ClusterSelector. 
+This configuration might be useful, for instance, if a compliance guideline only allowed a particular service account 
+to view information on clusters in their designated geographic region.
 
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
